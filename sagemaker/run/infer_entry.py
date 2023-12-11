@@ -52,7 +52,7 @@ def parse_train_args():
             Please provide the path of the script within the docker image")
     parser.add_argument("--output-chunk-size", type=int, default=100000,
         help="Number of rows per chunked prediction result or node embedding file.")
-    parser.add_argument('--log-level', default='INFO',
+    parser.add_argument('--logging-level', default='INFO',
         type=str, choices=['DEBUG', 'INFO', 'WARNING', 'CRITICAL', 'FATAL'])
 
     # following arguments are required to launch a distributed GraphStorm training task
